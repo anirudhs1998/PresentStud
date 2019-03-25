@@ -3,12 +3,16 @@ package com.example.present_stud;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
 public class TeacherActivity extends AppCompatActivity  {
+
 
     Button b1,b2,b3,b4;
     private ZXingScannerView zXingScannerView;
@@ -32,9 +36,33 @@ public class TeacherActivity extends AppCompatActivity  {
 
             }
         });
+
+
+
     }
 
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_bar,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch(id)
+        {
+            case R.id.logout:
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                return true;
+
+                default:return super.onOptionsItemSelected(item);
+        }
+
+    }
 
     public void fn(View view){
         if(view==b1){

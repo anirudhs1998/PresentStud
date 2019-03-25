@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
     public class MyThread extends Thread{
         public void run(){
             try {
-                Thread.sleep(5000);
+                Thread.sleep(3000);
             } catch (InterruptedException e) {
                 Toast.makeText(SplashActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
             }

@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+
     tools:context=".MainActivity">
     <Button
         android:layout_width="400dp"
@@ -38,10 +38,11 @@
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/imageView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@mipmap/ic_launcher" />
+        android:src="@mipmap/qrcode" />
    <!-- <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -70,6 +70,8 @@ public class SubjectList extends AppCompatActivity {
                                             child.getRef().child("subjects").child(String.valueOf(position)).setValue(val+1001);
 
                                             Toast.makeText(getApplicationContext(),"Attendance marked",Toast.LENGTH_SHORT).show();
+                                            Intent i = new Intent(getApplicationContext(),TeacherActivity.class);
+                                            startActivity(i);
                                         }
 
 

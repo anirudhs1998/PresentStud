@@ -126,12 +126,11 @@ public class AttendanceActivity extends AppCompatActivity {
             CheckBox cb = newView.findViewById(R.id.checkBoxA);
             Integer totalAttendance=hp.get(rollno);
             if(cb.isChecked()){
-                hp.put(rollno,totalAttendance+1001);
-                Log.e(rollno, " is present, attendance is " + hp.get(rollno));
+                hp.put(rollno,totalAttendance+1000);
+                Log.e(rollno, " is absent");
             }
             else{
-                hp.put(rollno, totalAttendance+1000);
-                Log.e(rollno," is absent");
+                Log.e(rollno," is present");
             }
         }
         // Entering attendance in database

@@ -23,7 +23,7 @@ public class TeacherLogin extends AppCompatActivity {
     public void doOnClick(View view){
         String user=userId.getText().toString().trim();
         String pass=password.getText().toString().trim();
-        if(user.equals("abc")&&pass.equals("abc")){
+        if(user.equals("sam@nitt.edu")&&pass.equals("sam123")){
             Intent intent=new Intent(TeacherLogin.this,TeacherActivity.class);
             startActivity(intent);
         }
